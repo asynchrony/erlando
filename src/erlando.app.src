@@ -1,6 +1,6 @@
 {application, erlando,
  [{description, "Syntax extensions for Erlang"},
-  {vsn, "%%VSN%%"},
+  {vsn, "1.0.0-asynchrony"},
   {modules, []},
   {registered, []},
   {applications, []}]}.
