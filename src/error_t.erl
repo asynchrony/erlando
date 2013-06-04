@@ -16,8 +16,9 @@
 
 -module(error_t, [InnerMonad]).
 -compile({parse_transform, do}).
+-compile({parse_transform, pmod_pt}).
 
--behaviour(monad).
+%-behaviour(monad). %% pmod_pt changes arity before behaviour is validated
 -export(['>>='/2, return/1, fail/1, run/1, lift/1]).
 
 -ifdef(use_specs).
